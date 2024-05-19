@@ -1,0 +1,66 @@
+#title {
+    text-align: center;
+}
+
+.calc {
+    width: 290px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 50px auto;
+}
+
+#display {
+    grid-area: 1 / 1 / 2 / 3;
+    height: 25px;
+}
+
+.calc-numbers-section {
+    padding: 5px;
+    border: 1px solid;
+    margin-top: 10px;
+    height: 175px;
+    width: 130px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.calc-operations-section {
+    padding: 5px;
+    border: 1px solid;
+    margin-top: 10px;
+    width: 130px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.calc button {
+    width: 40px;
+    height: 40px;
+}
+
+button.clear { 
+    width: 130px;
+    grid-area: 4 / 1 / 5 / 4;
+}
+button.delete { 
+    width: 85px;
+    grid-area: 3 / 2 / 4 / 4; 
+}
+button.copy { 
+    width: 130px;
+    grid-area: 5 / 1 / 6 / 4; 
+}
+
+.copy-message {
+    width: 150px;
+    margin: 15px auto 0 auto;
+    text-align: center;
+}
